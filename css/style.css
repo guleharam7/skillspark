@@ -1,0 +1,290 @@
+/* Root Colors */
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --success-color: #198754;
+    --info-color: #0dcaf0;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+}
+
+/* General Body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    overflow-x: hidden;
+    background-color: var(--light-color);
+}
+
+/* Navbar */
+.navbar-brand {
+    font-size: 1.5rem;
+}
+.nav-link:hover {
+    color: var(--info-color);
+    transform: translateY(-2px);
+    transition: 0.3s;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transition: 0.3s;
+}
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    transform: translateY(-2px);
+}
+
+/* Hero / Page Header */
+.hero-section, .page-header {
+    padding: 80px 0;
+    text-align: center;
+}
+.hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+.page-header {
+    background: var(--light-color);
+    color: #333;
+}
+
+/* Feature & Course Cards */
+.card {
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+.course-card img, .feature-card img {
+    border-radius: 10px;
+}
+
+/* Text in Cards */
+.card h4, .card h5 {
+    margin-top: 10px;
+    font-weight: bold;
+}
+.card p, .card li {
+    font-size: 0.95rem;
+}
+
+/* Team Cards */
+.team-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-top: 15px;
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 4px;
+    background-color: var(--primary-color);
+    top: 0;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+.timeline-item {
+    width: 50%;
+    padding: 15px 30px;
+    position: relative;
+}
+.timeline-item:nth-child(even) {
+    left: 50%;
+}
+.timeline-marker {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    top: 10px;
+    right: -10px;
+}
+.timeline-item:nth-child(even) .timeline-marker {
+    left: -10px;
+    right: auto;
+}
+.timeline-content {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+/* Forms */
+.form-control:focus, .form-select:focus, .form-check-input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(13,110,253,0.25);
+}
+
+/* Contact Page Cards */
+.contact-card, .contact-info-card {
+    border-radius: 12px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.contact-card:hover, .contact-info-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Map Container */
+.map-container iframe {
+    border-radius: 12px;
+    width: 100%;
+    height: 400px;
+    border: 0;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-color);
+    color: white;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: 0.3s;
+}
+footer a:hover {
+    color: var(--info-color);
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media(max-width:768px) {
+    .timeline-item, .timeline-item:nth-child(even) {
+        width: 100%;
+        left: 0;
+        padding-left: 40px;
+    }
+    .timeline::before {
+        left: 20px;
+    }
+    .timeline-marker {
+        left: 0 !important;
+        right: auto !important;
+    }
+}
+
+.text-center { text-align: center; }
+.mb-4 { margin-bottom: 1.5rem; }
+.mt-4 { margin-top: 1.5rem; }
+.p-3 { padding: 1rem; }
+.py-5 { padding-top: 3rem; padding-bottom: 3rem; } 
+/* Gradient Hero Background */
+.page-header {
+  background: linear-gradient(135deg, #0d6efd, #6610f2);
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+/* Feature Cards Hover */
+.feature-card, .course-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.feature-card:hover, .course-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+/* ---------- General Form Styles ---------- */
+.registration-card .form-control,
+.registration-card .form-select,
+.registration-card textarea {
+  border-radius: 0.375rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* ---------- Validation Styling ---------- */
+/* Valid input */
+.registration-card .form-control:valid,
+.registration-card .form-select:valid,
+.registration-card textarea:valid {
+  border-color: #28a745; /* Green border */
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+/* Invalid input */
+.registration-card .form-control:invalid,
+.registration-card .form-select:invalid,
+.registration-card textarea:invalid {
+  border-color: #dc3545; /* Red border */
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+/* Radio & Checkbox Validation Feedback */
+.registration-card .form-check-input:invalid ~ .invalid-feedback {
+  display: block;
+}
+
+/* Hover and Focus Effects */
+.registration-card .form-control:hover,
+.registration-card .form-select:hover,
+.registration-card textarea:hover {
+  border-color: #0d6efd; /* Primary color on hover */
+}
+
+.registration-card .form-control:focus,
+.registration-card .form-select:focus,
+.registration-card textarea:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+  outline: none;
+}
+
+/* Submit Button Hover */
+.registration-card button[type="submit"]:hover {
+  background: linear-gradient(90deg, #0d6efd, #6610f2); /* Gradient for better UI */
+  border-color: #6610f2;
+  transition: all 0.3s ease;
+}
+
+/* Small helper text */
+.registration-card small.text-muted {
+  font-size: 0.8rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .registration-card {
+    padding: 2rem 1rem;
+  }
+}
+/* Price Badge */
+.price-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #28a745;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/* Team Cards */
+.team-card img {
+  border: 3px solid #0d6efd;
+}
+
