@@ -81,14 +81,19 @@ skillspark/
 - **Timeline**: Milestone visualization for About page
 
 ### Screenshots
+
 **Home Page**  
 ![Home Page](assets/home.png)
+
 **Courses Page**  
 ![Courses Page](assets/courses.png)
+
 **About Us Page**  
 ![About Us Page](assets/about.png)
+
 **Registration Page**  
 ![Registration Page](assets/register.png)
+
 **Contact Page**  
 ![Contact Page](assets/contact.png)
 
