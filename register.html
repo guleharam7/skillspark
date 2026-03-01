@@ -32,6 +32,128 @@
     </div>
   </nav>
 
+    <!-- Page Header -->
+  <section class="py-5 bg-light text-center">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Student Registration</h1>
+      <p class="lead">Fill in the form below to start your learning journey</p>
+    </div>
+  </section>
+
+  <!-- Registration Form -->
+  <section class="py-5 registration-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="card shadow p-4 registration-card">
+            <form method="post" action="submit_form.php" enctype="multipart/form-data" class="needs-validation" novalidate>
+              <div class="row g-3">
+
+                <!-- First Name -->
+                <div class="col-md-6">
+                  <label class="form-label">First Name *</label>
+                  <input type="text" class="form-control" name="firstName" required>
+                </div>
+
+                <!-- Last Name -->
+                <div class="col-md-6">
+                  <label class="form-label">Last Name *</label>
+                  <input type="text" class="form-control" name="lastName" required>
+                </div>
+
+                <!-- Email -->
+                <div class="col-md-6">
+                  <label class="form-label">Email Address *</label>
+                  <input type="email" class="form-control" name="email" required>
+                </div>
+
+                <!-- Phone -->
+                <div class="col-md-6">
+                  <label class="form-label">Phone Number *</label>
+                  <input type="tel" class="form-control" name="phone" required pattern="[0-9]{10,15}">
+                </div>
+
+                <!-- Course -->
+                <div class="col-md-6">
+                  <label class="form-label">Select Course *</label>
+                  <select class="form-select" name="course" required>
+                    <option value="">Choose a course...</option>
+                    <option value="web">Web Development</option>
+                    <option value="app">App Development</option>
+                    <option value="uiux">UI/UX Design</option>
+                    <option value="ai">AI & Machine Learning</option>
+                    <option value="data">Data Science</option>
+                    <option value="cyber">Cybersecurity</option>
+                  </select>
+                </div>
+
+                <!-- Experience -->
+                <div class="col-md-6">
+                  <label class="form-label d-block">Experience Level *</label>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="experience" value="beginner" required>
+                    <label class="form-check-label">Beginner</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="experience" value="intermediate">
+                    <label class="form-check-label">Intermediate</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="experience" value="advanced">
+                    <label class="form-check-label">Advanced</label>
+                  </div>
+                </div>
+
+                <!-- University -->
+                <div class="col-md-6">
+                  <label class="form-label">University Name *</label>
+                  <input type="text" class="form-control" name="university" required>
+                </div>
+
+                <!-- Student ID -->
+                <div class="col-md-6">
+                  <label class="form-label">Student ID</label>
+                  <input type="text" class="form-control" name="studentId">
+                </div>
+
+                <!-- File Upload -->
+                <div class="col-12">
+                  <label class="form-label">Upload Student ID Card (Optional)</label>
+                  <input class="form-control" type="file" name="document" accept=".pdf,.jpg,.jpeg,.png">
+                  <small class="text-muted">Accepted: PDF, JPG, PNG (Max 5MB)</small>
+                </div>
+
+                <!-- Message -->
+                <div class="col-12">
+                  <label class="form-label">Why do you want to join? (Optional)</label>
+                  <textarea class="form-control" name="message" rows="3"></textarea>
+                </div>
+
+                <!-- Terms -->
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="terms" required>
+                    <label class="form-check-label">I agree to the Terms and Conditions *</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="newsletter">
+                    <label class="form-check-label">Subscribe to newsletter</label>
+                  </div>
+                </div>
+
+                <!-- Submit -->
+                <div class="col-12 text-center mt-4">
+                  <button type="submit" class="btn btn-primary btn-lg px-5">Submit Registration</button>
+                </div>
+
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
     <!-- Footer -->
   <footer class="bg-dark text-white py-4 mt-5">
     <div class="container text-center">
